@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D2FFCB91-F12B-4A01-8E7F-F9991357944C}</ProjectGuid>
+    <ProjectGuid>{C961E07F-EF60-4388-AB0B-4B64DE726EA8}</ProjectGuid>
     <OutputType>library</OutputType>
-    <RootNamespace>EventBottimHome</RootNamespace>
-    <AssemblyName>EventBottimHome</AssemblyName>
+    <RootNamespace>EventBottomGuest</RootNamespace>
+    <AssemblyName>EventBottomGuest</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
