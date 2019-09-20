@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="vMixControlLibrary.ScoreboardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Height="1080" Width="1920">
+    <Grid InputMethod.IsInputMethodEnabled="true">
+        <Image x:Name="BACKGROUND" Source="Images/EventBottom.png" Stretch="Fill"/>
+        <TextBlock x:Name="TITLE" FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic"
+               Foreground="#FFFFFFFF" FontSize="30" TextAlignment="Left" Width="412.075" Height="39.233"
+               HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+               InputMethod.IsInputMethodEnabled="true" Margin="437.75,834,0,0" FontWeight="Bold" Text="TITLE"
+               RenderTransformOrigin="0.5,0.5">
+      <UIElement.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </UIElement.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="NUMBER" FontStyle="Normal" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="56"
+               TextAlignment="Center" Text="NR" Width="91" Height="73.233" HorizontalAlignment="Left"
+               VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="true"
+               RenderTransformOrigin="0.5,0.5" Margin="344.75,825,0,0">
+      <UIElement.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </UIElement.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="CONTENT" FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic"
+               Foreground="Black" FontSize="30" TextAlignment="Left" Width="336.825" Height="39.733"
+               HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+               InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="CONTENT"
+               Margin="348.75,905.234,0,0"/>
+        <Image x:Name="CLUB_LOGO" HorizontalAlignment="Left" Height="60" Margin="271,829.25,0,0"
+           VerticalAlignment="Top" Width="60" Source="{x:Null}"/>
+        <Rectangle x:Name="BGCOLOR" Fill="#FF2B2B2B" HorizontalAlignment="Left" Height="6.28"
+               Margin="436.65,877.833,0,0" VerticalAlignment="Top" Width="327.433" RadiusX="3" RadiusY="3"/>
+        <Rectangle x:Name="TEAMCOLOR" Fill="#FF007E47" HorizontalAlignment="Left" Height="6.28"
+               Margin="436.65,877.833,0,0" VerticalAlignment="Top" Width="160.933" RadiusX="3" RadiusY="3"/>
+        <Border x:Name="TEAM2NDCOLOR" BorderThickness="0,0,0,0" CornerRadius="0,3,3,0" Height="6.28"
+            Width="80.4665" Margin="517.116,877.833,1322.417,195.887"/>
+        <Image x:Name="PLAYER_PHOTO" Margin="341,519.375,1379,260.625" Stretch="Fill" Width="150" Height="225"
+           HorizontalAlignment="Left" VerticalAlignment="Bottom" Source="{x:Null}"/>
+    </Grid>
+</UserControl>
