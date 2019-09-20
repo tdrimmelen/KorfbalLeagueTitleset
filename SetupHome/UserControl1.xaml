@@ -1,0 +1,741 @@
+﻿<UserControl x:Class="vMixControlLibrary.ScoreboardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Height="1080" Width="1920">
+    <FrameworkElement.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridOffensePlayer1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridOffensePlayer2">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.3" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.6" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridOffensePlayer3">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridOffensePlayer4">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.8" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridDefensePlayer1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.3" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridDefensePlayer2">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.1" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.4" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridDefensePlayer3">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.2" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.5" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="GridDefensePlayer4">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.3" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.6" Value="510" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="OffenseNUMBER2NDGrid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="OffenseNumber2Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.3" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="OffenseNumber4Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="OffenseNumber3Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.6" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="DefenseNUMBER2NDGrid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.2" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="DefenseNumber2Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.1" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.3" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="DefenseNumber4Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.3" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.5" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                     Storyboard.TargetName="DefenseNumber3Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.2" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.4" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="OffenseNUMBER2NDGrid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="OffenseNumber2Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.3" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="OffenseNumber4Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="OffenseNumber3Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.6" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="DefenseNUMBER2NDGrid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.2" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="DefenseNumber2Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.1" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.3" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="DefenseNumber4Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.3" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.5" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                     Storyboard.TargetName="DefenseNumber3Grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.2" Value="0" KeySpline="0,0,0.2,0.9"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.4" Value="1" KeySpline="0,0,0.2,0.9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ATTACK">
+                <SplineDoubleKeyFrame KeyTime="0:0:5.9" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="DEFENSE">
+                <SplineDoubleKeyFrame KeyTime="0:0:5.9" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:6.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </FrameworkElement.Resources>
+    <FrameworkElement.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </FrameworkElement.Triggers>
+    <Grid x:Name="grid" InputMethod.IsInputMethodEnabled="true">
+        <Image x:Name="BACKGROUND" Source="Images/Setup.png" Stretch="Fill"/>
+        <Grid x:Name="TitleGrid" Margin="177.688,111.117,964.237,915.65" Width="778" Height="53">
+            <TextBlock x:Name="TITLE" FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic"
+                 Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Left" Width="326.075" Height="53.233"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="OPSTELLING"
+                 RenderTransformOrigin="0.5,0.5" Margin="0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Image x:Name="CLUB_LOGO" HorizontalAlignment="Left" Height="65" Margin="175.275,190.5,0,0"
+           VerticalAlignment="Top" Width="65" Source="{x:Null}"/>
+        <Rectangle x:Name="BGCOLOR" Fill="#FF2B2B2B" HorizontalAlignment="Left" Height="6.28"
+               Margin="284.125,240.833,0,0" VerticalAlignment="Top" Width="391.933" RadiusX="3" RadiusY="3"/>
+        <Rectangle x:Name="TEAMCOLOR" Fill="#FF007E47" HorizontalAlignment="Left" Height="6.28"
+               Margin="284.125,240.833,0,0" VerticalAlignment="Top" Width="242.683" RadiusX="3" RadiusY="3"/>
+        <Border x:Name="TEAM2NDCOLOR" BorderThickness="0,0,0,0" CornerRadius="0,3,3,0" Height="6.28"
+            Width="121.3415" Margin="405.466,240.833,1393.192,832.887"/>
+        <TextBlock x:Name="TEAM" FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic"
+               Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Left" Width="685.075" Height="53.233"
+               HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+               InputMethod.IsInputMethodEnabled="true" Margin="284.875,189.375,0,0" FontWeight="Bold"
+               Text="TeamName" RenderTransformOrigin="0.5,0.5">
+      <UIElement.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </UIElement.RenderTransform>
+        </TextBlock>
+        <Grid x:Name="ZoneGrid" Margin="1359,226.948,158.8,805.819">
+            <TextBlock x:Name="ATTACK" FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic"
+                 Foreground="#FFFFFFFF" FontSize="32" TextAlignment="Center" Width="402.2" Height="53.233"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="Aanval"
+                 RenderTransformOrigin="0.5,0.5">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="DEFENSE" FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic"
+                 Foreground="#FFFFFFFF" FontSize="32" TextAlignment="Center" Width="402.2" Height="53.233"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="Verdediging"
+                 RenderTransformOrigin="0.5,0.5" Opacity="0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="CoachGrid" Margin="547.373,867.917,568.177,158.85">
+            <TextBlock x:Name="COACH_TITLE" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="35" TextAlignment="Left"
+                 Width="144.075" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Visibility="Visible" InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="Coach"
+                 RenderTransformOrigin="0.5,0.5">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="Coach" FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic"
+                 Foreground="#FFFFFFFF" FontSize="35" TextAlignment="Left" Width="649.075" Height="53.233"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="155.375,0,0,0" FontWeight="Bold" Text="CoachName"
+                 RenderTransformOrigin="0.5,0.5">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="GridOffensePlayer1" Margin="163.25,274.75,0,0" Width="294" Height="510"
+          HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="OffensePlayer1_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Margin="-13,0" Source="{x:Null}"/>
+            <TextBlock x:Name="OffensePlayer1_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="OffensePlayer1_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GridOffensePlayer2" Margin="461.25,274.75,1163.75,295.25" Width="294" Height="510"
+          HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="OffensePlayer2_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Source="{x:Null}"/>
+            <TextBlock x:Name="OffensePlayer2_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="OffensePlayer2_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GridOffensePlayer3" Margin="759.25,274.75,867,295.25" Width="294" Height="510"
+          VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="OffensePlayer3_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Source="{x:Null}"/>
+            <TextBlock x:Name="OffensePlayer3_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="OffensePlayer3_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GridOffensePlayer4" Margin="1057.25,274.75,569,295.25" Width="294" Height="510"
+          VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="OffensePlayer4_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Source="{x:Null}"/>
+            <TextBlock x:Name="OffensePlayer4_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="OffensePlayer4_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GridDefensePlayer1" Margin="163.25,274.75,0,295.25" Width="294" Height="510"
+          HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="DefensePlayer1_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Source="{x:Null}"/>
+            <TextBlock x:Name="DefensePlayer1_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="DefensePlayer1_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GridDefensePlayer2" Margin="461.25,274.75,0,295.25" Width="294" Height="510"
+          HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="DefensePlayer2_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Source="{x:Null}"/>
+            <TextBlock x:Name="DefensePlayer2_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="DefensePlayer2_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GridDefensePlayer3" Margin="759.25,274.75,866.75,295.25" Width="294" Height="510"
+          VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="DefensePlayer3_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Source="{x:Null}"/>
+            <TextBlock x:Name="DefensePlayer3_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="DefensePlayer3_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GridDefensePlayer4" Margin="1057.25,274.75,568.75,295.25" Width="294" Height="510"
+          VerticalAlignment="Top" Background="#FFAEAEAE">
+            <Image x:Name="DefensePlayer4_PLAYER_PHOTO" Stretch="Fill" HorizontalAlignment="Center"
+             VerticalAlignment="Top" Width="294" Height="441" Source="{x:Null}"/>
+            <TextBlock x:Name="DefensePlayer4_NUMBER" FontStyle="Normal" TextTrimming="CharacterEllipsis"
+                 FontFamily="Century Gothic" Foreground="Black" FontSize="80" TextAlignment="Center" Width="90.879"
+                 Height="108.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Margin="0,-6,0,0" RenderTransformOrigin="0.5,0.5" Text="NR">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+            <Grid Margin="0" Width="294" Height="82" Background="#FFEC6808" VerticalAlignment="Bottom">
+                <TextBlock x:Name="DefensePlayer4_TITLE" FontStyle="Normal" FontFamily="Century Gothic" TextWrapping="Wrap"
+                   Foreground="Black" FontSize="32" TextAlignment="Center" Width="284" Height="82"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" FontWeight="Bold" Text="PlayerName"
+                   RenderTransformOrigin="0.5,0.5">
+          <UIElement.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </UIElement.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Grid x:Name="OffenseNUMBER2NDGrid" Margin="1393.5,705,466.5,315" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="OffensePlayer1_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="OffenseNumber2Grid" Margin="1486.5,705,373.5,315" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="OffensePlayer2_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="OffenseNumber3Grid" Margin="1576.5,705,283.5,315" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="OffensePlayer3_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="OffenseNumber4Grid" Margin="1669.5,705,190.5,315" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="OffensePlayer4_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="DefenseNUMBER2NDGrid" Margin="1393.5,400,466.5,620" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="DefensePlayer1_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="DefenseNumber2Grid" Margin="1486.5,400,373.5,620" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="DefensePlayer2_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="DefenseNumber3Grid" Margin="1576.5,400,283.5,620" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="DefensePlayer3_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="DefenseNumber4Grid" Margin="1669.5,400,190.5,620" Width="60" Height="60"
+          RenderTransformOrigin="0.5,0.5">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <Ellipse Fill="#FFEC6808" HorizontalAlignment="Left" Height="60" Margin="0" VerticalAlignment="Top"
+               Width="60" RenderTransformOrigin="0.551,0.42"/>
+            <TextBlock x:Name="DefensePlayer4_NUMBER2ND" FontStyle="Normal" FontFamily="Century Gothic"
+                 TextWrapping="Wrap" Foreground="Black" FontSize="40" TextAlignment="Center" Width="60" Height="50"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                 InputMethod.IsInputMethodEnabled="true" Text="NR" RenderTransformOrigin="0.5,0.5" Margin="0,4,0,0">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </UIElement.RenderTransform>
+            </TextBlock>
+        </Grid>
+    </Grid>
+</UserControl>
