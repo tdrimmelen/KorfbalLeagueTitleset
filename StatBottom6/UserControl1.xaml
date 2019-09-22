@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="vMixControlLibrary.ScoreboardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Height="1080" Width="1920">
+    <FrameworkElement.Resources>
+        <Storyboard x:Key="Storyboard1" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="StatGroup2">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:10.2" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:20.2" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:20.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="StatGroup1">
+                <SplineDoubleKeyFrame KeyTime="0:0:10" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:10.2" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:20.2" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:20.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </FrameworkElement.Resources>
+    <FrameworkElement.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </FrameworkElement.Triggers>
+    <Grid InputMethod.IsInputMethodEnabled="true">
+        <Image x:Name="BACKGROUND" Source="Images/StatBottom.png" Stretch="Fill"/>
+        <TextBlock x:Name="AHOMETEAM" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+               Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Center" Text="PKC" Width="104.825"
+               Height="48.983" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+               InputMethod.IsInputMethodEnabled="true" Margin="231,897.375,0,0"/>
+        <Rectangle x:Name="HOMETEAMCOLOR" Fill="#FF007E47" HorizontalAlignment="Left" Height="6.28"
+               Margin="243.254,941.358,0,0" VerticalAlignment="Top" Width="81.85" RadiusX="3" RadiusY="3"/>
+        <Border x:Name="HOMETEAM2NDCOLOR" BorderThickness="0,0,0,0" CornerRadius="0,2.5,2.5,0" Height="6.28"
+            Width="40.925" Margin="284.179,941.358,1594.896,132.362"/>
+        <TextBlock x:Name="AGUESTTEAM" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+               Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Center" Text="TOP" Width="104.828"
+               Height="48.983" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+               InputMethod.IsInputMethodEnabled="true" Margin="611.46,897.375,0,0"/>
+        <Rectangle x:Name="GUESTTEAMCOLOR" Fill="#FFDE2F38" HorizontalAlignment="Left" Height="6.28"
+               Margin="623.714,941.358,0,0" VerticalAlignment="Top" Width="81.851" RadiusX="3" RadiusY="3"/>
+        <Border x:Name="GUESTTEAM2NDCOLOR" BorderThickness="0,0,0,0" CornerRadius="0,2.5,2.5,0" Height="6.28"
+            Width="40.925" Margin="664.64,941.358,1214.435,132.362"/>
+        <TextBlock x:Name="TITLE" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+               Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Center" Text="STATISTIEKEN" Width="281.356"
+               Height="48.983" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+               InputMethod.IsInputMethodEnabled="true" Margin="331.354,900.5,0,0"/>
+        <Grid x:Name="StatGroup1" Margin="231,743.046,1203.712,187.993">
+            <Grid x:Name="Stat1" Margin="0,0,0,99.978">
+                <TextBlock x:Name="STAT_LEFT_LABEL1" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="Black" FontSize="29" TextAlignment="Center" Text="STAT1" Width="300" Height="48.983"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="99.104,0,100.495,0"/>
+                <TextBlock x:Name="STAT_LEFT1" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="10" Width="94.104" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true"/>
+                <TextBlock x:Name="STAT_RIGHT1" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="15" Width="100.495" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="384.793,0,0,0"/>
+            </Grid>
+            <Grid x:Name="Stat2" Margin="0,50.277,0,49.701">
+                <TextBlock x:Name="STAT_LEFT_LABEL2" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="Black" FontSize="29" TextAlignment="Center" Text="STAT1" Width="300" Height="48.983"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="99.104,0,100.495,0"/>
+                <TextBlock x:Name="STAT_LEFT2" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="10" Width="94.104" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true"/>
+                <TextBlock x:Name="STAT_RIGHT2" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="15" Width="100.495" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="384.793,0,0,0"/>
+            </Grid>
+            <Grid x:Name="Stat3" Margin="0,99.978,0,0">
+                <TextBlock x:Name="STAT_LEFT_LABEL3" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="Black" FontSize="29" TextAlignment="Center" Text="STAT1" Width="300" Height="48.983"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="99.104,0,100.495,0"/>
+                <TextBlock x:Name="STAT_LEFT3" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="10" Width="94.104" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true"/>
+                <TextBlock x:Name="STAT_RIGHT3" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="15" Width="100.495" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="384.793,0,0,0"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="StatGroup2" Margin="231,743.046,1203.712,187.993">
+            <Grid x:Name="Stat4" Margin="0,0,0,99.978">
+                <TextBlock x:Name="STAT_LEFT_LABEL4" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="Black" FontSize="29" TextAlignment="Center" Text="STAT1" Width="300" Height="48.983"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="99.104,0,100.495,0"/>
+                <TextBlock x:Name="STAT_LEFT4" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="10" Width="94.104" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true"/>
+                <TextBlock x:Name="STAT_RIGHT4" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="15" Width="100.495" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="384.793,0,0,0"/>
+            </Grid>
+            <Grid x:Name="Stat5" Margin="0,50.277,0,49.701">
+                <TextBlock x:Name="STAT_LEFT_LABEL5" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="Black" FontSize="29" TextAlignment="Center" Text="STAT1" Width="300" Height="48.983"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="99.104,0,100.495,0"/>
+                <TextBlock x:Name="STAT_LEFT5" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="10" Width="94.104" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true"/>
+                <TextBlock x:Name="STAT_RIGHT5" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="15" Width="100.495" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="384.793,0,0,0"/>
+            </Grid>
+            <Grid x:Name="Stat6" Margin="0,99.978,0,0">
+                <TextBlock x:Name="STAT_LEFT_LABEL6" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="Black" FontSize="29" TextAlignment="Center" Text="STAT1" Width="300" Height="48.983"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="99.104,0,100.495,0"/>
+                <TextBlock x:Name="STAT_LEFT6" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="10" Width="94.104" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true"/>
+                <TextBlock x:Name="STAT_RIGHT6" FontStyle="Normal" FontWeight="Black" FontFamily="Century Gothic"
+                   Foreground="White" FontSize="30" TextAlignment="Center" Text="15" Width="100.495" Height="48.983"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible"
+                   InputMethod.IsInputMethodEnabled="true" Margin="384.793,0,0,0"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
