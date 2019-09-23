@@ -1,0 +1,417 @@
+<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mtl="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Width="1920" Height="1080" Panel.ZIndex="500" InputMethod.IsInputMethodEnabled="True">
+    <Grid x:Name="grid" InputMethod.IsInputMethodEnabled="True" Margin="0,93,0,-93">
+        <Image x:Name="BACKGROUND" Source="Images/Score.png" Stretch="Fill"/>
+        <Grid x:Name="TitleGrid" Margin="242.875,126.267,246.112,900.5">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Center" x:Name="TITLE" Width="1431.013" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="STATISTIEKEN" RenderTransformOrigin="0.5,0.5" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Left" x:Name="HOMETEAM" Width="685.075" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" Margin="35,0,0,0" FontWeight="Bold" Text="PHOENIX CITY" RenderTransformOrigin="0.5,0.5" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="40" TextAlignment="Right" x:Name="GUESTTEAM" Width="685.075" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" Margin="720.494,0,0,0" FontWeight="Bold" Text="SHANGRILA FC" RenderTransformOrigin="0.5,0.5" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat1Grid" Margin="277,194.155,263.924,832.612">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_OffensePlayer1" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_OffenseScore1" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_OffensePlayer1" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_OffenseScore1" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat2Grid" Margin="277,255.655,263.924,771.112">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_OffensePlayer2" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_OffenseScore2" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_OffensePlayer2" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_OffenseScore2" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat3Grid" Margin="277,317.155,263.924,709.612">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_OffensePlayer3" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_OffenseScore3" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_OffensePlayer3" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_OffenseScore3" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat4Grid" Margin="277,378.655,263.924,648.112">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_OffensePlayer4" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_OffenseScore4" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_OffensePlayer4" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_OffenseScore4" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat5Grid" Margin="277,442.155,263.924,584.612">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_DefensePlayer1" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_DefenseScore1" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_DefensePlayer1" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_DefenseScore1" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat6Grid" Margin="277,503.655,263.924,523.112">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_DefensePlayer2" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_DefenseScore2" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_DefensePlayer2" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_DefenseScore2" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat7Grid" Margin="277,565.155,263.924,461.612">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_DefensePlayer3" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_DefenseScore3" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_DefensePlayer3" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_DefenseScore3" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat8Grid" Margin="277,626.655,263.924,400.112">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_DefensePlayer4" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_DefenseScore4" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_DefensePlayer4" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_DefenseScore4" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid x:Name="Stat9Grid" Margin="277,689.655,263.924,337.112">
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="H_OtherPlayer" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="0,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="H_OtherScore" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="565.278,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="#FFFFFFFF" FontSize="34" TextAlignment="Left" x:Name="G_OtherPlayer" Width="562.966" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="PlayerName" RenderTransformOrigin="0.5,0.5" Margin="714.701,-2,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock FontStyle="Normal" TextTrimming="CharacterEllipsis" FontFamily="Century Gothic" Foreground="Black" FontSize="34" TextAlignment="Center" x:Name="G_OtherScore" Width="99.423" Height="53.233" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Visible" InputMethod.IsInputMethodEnabled="True" FontWeight="Bold" Text="0" RenderTransformOrigin="0.5,0.5" Margin="1279.272,-0.666,0,0" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+    </Grid>
+
+
+</UserControl>

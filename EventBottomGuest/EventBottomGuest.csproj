@@ -50,6 +50,61 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Commentator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EventTop.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Fact.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="icons\1.png" />
+    <Content Include="icons\2.png" />
+    <Content Include="icons\3.png" />
+    <Content Include="icons\4.png" />
+    <Content Include="icons\5.png" />
+    <Content Include="icons\6.png" />
+    <Content Include="icons\7.png" />
+    <Content Include="icons\8.png" />
+    <Content Include="icons\s0.png" />
+    <Content Include="icons\s1.png" />
+    <Content Include="icons\s2.png" />
+    <Content Include="icons\s3.png" />
+    <Content Include="icons\s4.png" />
+    <Content Include="icons\s5.png" />
+    <Content Include="icons\s6.png" />
+    <Content Include="icons\s7.png" />
+    <Content Include="icons\s8.png" />
+    <Content Include="images\EventTop.mov" />
+    <Content Include="images\Fact.png" />
+    <Content Include="images\Official.png" />
+    <Content Include="images\PlayerBio.png" />
+    <Content Include="images\Replay.mov" />
+    <Content Include="images\Score.png" />
+    <Content Include="images\Scoreboard2017.mov" />
+    <Content Include="images\Setup.png" />
+    <Content Include="images\StatBottom.png" />
+    <Content Include="images\StatTop.png" />
+    <Content Include="images\SubstitutionsTop.mov" />
+    <Content Include="images\Transition1.mov" />
+    <Content Include="images\Transition2.mov" />
+    <Content Include="images\Transition3.mov" />
+    <Content Include="Official.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PlayerBio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Score.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
     <Page Include="UserControl1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,16 +132,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Content Include="Kleuren.xlsx" />
+    <Content Include="fonts\GOTHIC.TTF" />
+    <Content Include="fonts\GOTHICB.TTF" />
+    <Content Include="fonts\GOTHICBI.TTF" />
+    <Content Include="fonts\GOTHICI.TTF" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Scoreboard.config">
+    <Content Include="Scoreboard.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\EventBottom.png" />
+    <Content Include="images\EventBottom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
