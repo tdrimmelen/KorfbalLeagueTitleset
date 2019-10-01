@@ -86,7 +86,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\StatBottom.png" />
+    <Resource Include="images\StatBottom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

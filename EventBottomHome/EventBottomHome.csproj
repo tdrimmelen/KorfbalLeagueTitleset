@@ -86,7 +86,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\EventBottom.png" />
+    <Resource Include="images\EventBottom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
